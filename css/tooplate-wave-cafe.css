@@ -156,15 +156,15 @@ h2 { margin-top: 0; }
 }
 
 .tm-list-item {
-/*     display: flex; */
+    display: flex;
     align-items: center;
-/*     justify-content: space-between; */
+    justify-content: space-between;
     margin-top: 20px;
 }
 
 .tm-list-item-2 { align-items: flex-start; }
 
-.tm-list-item-img {
+/* .tm-list-item-img {
     margin-right: 20px;
     width: 160px;
     height: 160px;
@@ -175,7 +175,7 @@ h2 { margin-top: 0; }
     margin-right: 25px;
     width: 200px;
     height: 200px;
-}
+} */
 
 .tm-list-item-text {
     padding: 20px 25px;
