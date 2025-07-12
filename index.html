@@ -52,28 +52,41 @@
             <h1 class="tm-site-name">Clean WaterWays</h1>
           </div>
           <nav class="tm-site-nav">
-            <a href="#drink" class="tm-page-link active">
-              <!-- <i class="fas fa-mug-hot tm-page-link-icon"></i> -->
-              <span style="font-size: 17px; padding-left: 92px;">Goals</span>
-            </a>
-            <a href="#about" class="tm-page-link">
-              <!-- <i class="fas fa-users tm-page-link-icon"></i> -->
-              <span style="font-size: 17px; padding-left: 65px;">Past Projects</span>
-            </a>
-            <a href="#board" class="tm-page-link">
-              <!-- <i class="fas fa-glass-martini tm-page-link-icon"></i> -->
-              <span style="font-size: 17px; padding-left: 47px;">Board of Directors</span>
-            </a>
-            <a href="#volunteer" class="tm-page-link">
-              <span style="font-size: 17px; padding-left: 47px;">Want to Volunteer?</span>
-            </a>
-            <a href="#start" class="tm-page-link">
-              <span style="font-size: 17px; padding-left: 23px;">Start Your Own Cleanup?</span>
-            </a>
-            <a href="#contact" class="tm-page-link">
-              
-              <span style="font-size: 17px; padding-left: 80px;">About Us</span>
-            </a>
+            <ul class="tm-site-nav-ul">
+              <li class="tm-page-nav-item">
+                <a href="#drink" class="tm-page-link active">
+                  <!-- <i class="fas fa-mug-hot tm-page-link-icon"></i> -->
+                  <span>Goals</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#about" class="tm-page-link">
+                  <!-- <i class="fas fa-users tm-page-link-icon"></i> -->
+                  <span>Past Projects</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#board" class="tm-page-link">
+                  <!-- <i class="fas fa-glass-martini tm-page-link-icon"></i> -->
+                  <span style="font-size: 17px;">Board of Directors</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#volunteer" class="tm-page-link">
+                  <span style="font-size: 17px;">Want to Volunteer?</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#start" class="tm-page-link">
+                  <span style="font-size: 17px;">Start Your Own Cleanup?</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#contact" class="tm-page-link">
+                  <span>About Us</span>
+                </a>
+              </li>
+            </ul>
           </nav>
         </div>        
       </div>
@@ -373,7 +386,7 @@ To pursue these hopes, we will enlighten these children about stormwater polluta
       let pageId = location.hash;
 
       if(pageId) {
-        highlightMenu($(`.tm-page-link[href^="${pageId}"]`)); 
+        highlightMenu($(.tm-page-link[href^="${pageId}"])); 
         showPage($(pageId));
       }
       else {
